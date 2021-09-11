@@ -19,6 +19,10 @@
           <input class="mx-2" type="text" #dummy1 (keydown)= "getData(dummy1.value)" placeholder="event keydown">
           <input type="text" #dummy2 (blur)= "getData(dummy2.value)" placeholder="event blur">
           <input class="ml-2"type="text" #dummy3 (input)= "getData(dummy3.value)" placeholder="event input">
+
+          <p class="pt-4">call fuction with different events h6 tag mouse over & mouse leave</p>
+          <h6 (mouseover)="getmouse('over')">Angular Setup</h6>
+          <h6 (mouseleave)="getmouse('leave')">Setup Angular</h6>
         </div>
       </div>
 

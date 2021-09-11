@@ -29,4 +29,8 @@ export class HomeComponent implements OnInit {
     console.warn(val)
   }
 
+  getmouse(val: string){
+    console.warn(val)
+  }
+
 }
