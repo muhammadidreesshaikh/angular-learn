@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+
+.top-bar{
+  background-color: black;
+  padding: 20px 0;
+  .logo{
+    a{
+      font-size: 18px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+  .nav{
+    ul{
+      display: flex;
+      margin: auto;
+      list-style: none;
+      li{
+        a{
+          padding: 0 15px;
+          font-size: 15px;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

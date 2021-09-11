@@ -1,0 +1,33 @@
+<div class="home">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12">
+        <div class="inner">
+          <p>call fuction on button click</p>
+          <button class="mr-3" (click)= "getRemind()">Click Remind</button>
+          <button (click)= "getName('1st Name', '2nd Name')">Click Name</button>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p>call fuction with different events</p>
+          <button class="mr-3" (click)= "getValue('hello')">Click Value</button>
+
+          <input type="text" #dummy (keyup)= "getData(dummy.value)" placeholder="event keyup">
+          <input class="mx-2" type="text" #dummy1 (keydown)= "getData(dummy1.value)" placeholder="event keydown">
+          <input type="text" #dummy2 (blur)= "getData(dummy2.value)" placeholder="event blur">
+          <input class="ml-2"type="text" #dummy3 (input)= "getData(dummy3.value)" placeholder="event input">
+        </div>
+      </div>
+
+      <!-- <div class="col-12">
+        <div class="inner">
+          <p>lorem</p>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</div>
