@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  displayValue="";
+  resultValue="";
+
   constructor() { }
 
   ngOnInit(): void {
@@ -29,8 +32,18 @@ export class HomeComponent implements OnInit {
     console.warn(val)
   }
 
-  getmouse(val: string){
+  getMouse(val: string){
     console.warn(val)
+  }
+
+  getInput(val: string){
+    console.warn(val)
+    this.displayValue=val
+  }
+
+  getPress(val: string){
+    console.warn(val)
+    this.resultValue=val
   }
 
 }

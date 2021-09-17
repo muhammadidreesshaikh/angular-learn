@@ -21,16 +21,22 @@
           <input class="ml-2"type="text" #dummy3 (input)= "getData(dummy3.value)" placeholder="event input">
 
           <p class="pt-4">call fuction with different events h6 tag mouse over & mouse leave</p>
-          <h6 (mouseover)="getmouse('over')">Angular Setup</h6>
-          <h6 (mouseleave)="getmouse('leave')">Setup Angular</h6>
+          <h6 (mouseover)="getMouse('over')">Angular Setup</h6>
+          <h6 (mouseleave)="getMouse('leave')">Setup Angular</h6>
         </div>
       </div>
 
-      <!-- <div class="col-12">
+      <div class="col-12">
         <div class="inner">
-          <p>lorem</p>
+          <p>Get Input Box Value and Display</p>
+          <input #box type="text" (keyup)="getInput(box.value)" placeholder="Your Name" name="name">
+          <p>Box value is : {{displayValue}}</p>
+
+          <input class="mt-2" #reslt type="text" placeholder="Your Name" name="name">
+          <button class="ml-2" (click)="getPress(reslt.value)">Click</button>
+          <p>Box Result is : {{resultValue}}</p>
         </div>
-      </div> -->
+      </div>
 
     </div>
   </div>
