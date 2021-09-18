@@ -5,20 +5,20 @@
       <div class="col-12">
         <div class="inner">
           <p>call fuction on button click</p>
-          <button class="mr-3" (click)= "getRemind()">Click Remind</button>
-          <button (click)= "getName('1st Name', '2nd Name')">Click Name</button>
+          <button class="mr-3" (click)="getRemind()">Click Remind</button>
+          <button (click)="getName('1st Name', '2nd Name')">Click Name</button>
         </div>
       </div>
 
       <div class="col-12">
         <div class="inner">
           <p>call fuction with different events</p>
-          <button class="mr-3" (click)= "getValue('hello')">Click Value</button>
+          <button class="mr-3" (click)="getValue('hello')">Click Value</button>
 
-          <input type="text" #dummy (keyup)= "getData(dummy.value)" placeholder="event keyup">
-          <input class="mx-2" type="text" #dummy1 (keydown)= "getData(dummy1.value)" placeholder="event keydown">
-          <input type="text" #dummy2 (blur)= "getData(dummy2.value)" placeholder="event blur">
-          <input class="ml-2"type="text" #dummy3 (input)= "getData(dummy3.value)" placeholder="event input">
+          <input type="text" #dummy (keyup)="getData(dummy.value)" placeholder="event keyup">
+          <input class="mx-2" type="text" #dummy1 (keydown)="getData(dummy1.value)" placeholder="event keydown">
+          <input type="text" #dummy2 (blur)="getData(dummy2.value)" placeholder="event blur">
+          <input class="ml-2" type="text" #dummy3 (input)="getData(dummy3.value)" placeholder="event input">
 
           <p class="pt-4">call fuction with different events h6 tag mouse over & mouse leave</p>
           <h6 (mouseover)="getMouse('over')">Angular Setup</h6>
@@ -35,6 +35,24 @@
           <input class="mt-2" #reslt type="text" placeholder="Your Name" name="name">
           <button class="ml-2" (click)="getPress(reslt.value)">Click</button>
           <p>Box Result is : {{resultValue}}</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p>make button for counter</p>
+
+          <button (click)= "counter('minus')">---</button>
+          <p>Count is : {{count}}</p>
+          <button (click)= "counter('add')">+++</button>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p>Basic Rule of style</p>
+          Global Style:
+          <h3 class="heading">Check Style</h3>
         </div>
       </div>
 

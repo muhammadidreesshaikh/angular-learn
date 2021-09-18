@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
   displayValue="";
   resultValue="";
+  count=0
 
   constructor() { }
 
@@ -44,6 +45,10 @@ export class HomeComponent implements OnInit {
   getPress(val: string){
     console.warn(val)
     this.resultValue=val
+  }
+
+  counter(type: string){
+    type==='add' ? this.count++ : this.count--;
   }
 
 }
