@@ -1,4 +1,6 @@
+import { typeSourceSpan } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { TimeoutError } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  displayValue="";
-  resultValue="";
-  count=0
+  displayValue = "";
+  resultValue = "";
+  count = 0;
+  name = "peter";
+  disable = false;
+  show = true;
 
   constructor() { }
 

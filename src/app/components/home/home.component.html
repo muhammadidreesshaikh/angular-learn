@@ -4,7 +4,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p>call fuction on button click</p>
+          <p># call fuction on button click</p>
           <button class="mr-3" (click)="getRemind()">Click Remind</button>
           <button (click)="getName('1st Name', '2nd Name')">Click Name</button>
         </div>
@@ -12,7 +12,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p>call fuction with different events</p>
+          <p># call fuction with different events</p>
           <button class="mr-3" (click)="getValue('hello')">Click Value</button>
 
           <input type="text" #dummy (keyup)="getData(dummy.value)" placeholder="event keyup">
@@ -20,7 +20,7 @@
           <input type="text" #dummy2 (blur)="getData(dummy2.value)" placeholder="event blur">
           <input class="ml-2" type="text" #dummy3 (input)="getData(dummy3.value)" placeholder="event input">
 
-          <p class="pt-4">call fuction with different events h6 tag mouse over & mouse leave</p>
+          <p class="pt-4"># call fuction with different events h6 tag mouse over & mouse leave</p>
           <h6 (mouseover)="getMouse('over')">Angular Setup</h6>
           <h6 (mouseleave)="getMouse('leave')">Setup Angular</h6>
         </div>
@@ -28,7 +28,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p>Get Input Box Value and Display</p>
+          <p># Get Input Box Value and Display</p>
           <input #box type="text" (keyup)="getInput(box.value)" placeholder="Your Name" name="name">
           <p>Box value is : {{displayValue}}</p>
 
@@ -40,21 +40,51 @@
 
       <div class="col-12">
         <div class="inner">
-          <p>make button for counter</p>
+          <p># make button for counter</p>
 
-          <button (click)= "counter('minus')">---</button>
+          <button (click)="counter('minus')">---</button>
           <p>Count is : {{count}}</p>
-          <button (click)= "counter('add')">+++</button>
+          <button (click)="counter('add')">+++</button>
         </div>
       </div>
 
       <div class="col-12">
         <div class="inner">
-          <p>Basic Rule of style</p>
+          <p># Basic Rule of style</p>
           Global Style:
           <h3 class="heading">Check Style</h3>
         </div>
       </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p># Property Binding & Interpolation</p>
+          <!-- Property Interpolation -->
+          <input class="mr-3" type="text" name="user-name" value={{name}} disabled={{disable}}>
+
+          <!-- Property Binding -->
+          <input type="text" name="user-name" [value]=name [disabled]=disable>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p># If else condition</p>
+          <h4 *ngIf= "show else elseBlock">If Condition</h4>
+
+          <!-- check other style condition if-else -->
+          <!-- <h4 *ngIf= "show; then ifBlock else elseBlock">If Condition</h4> -->
+
+          <ng-template #elseBlock>
+            <h4>Else Condition</h4>
+          </ng-template>
+
+          <!-- <ng-template #ifBlock>
+            <h4>Condition</h4>
+          </ng-template> -->
+        </div>
+      </div>
+
 
     </div>
   </div>
