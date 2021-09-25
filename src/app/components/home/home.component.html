@@ -85,6 +85,43 @@
         </div>
       </div>
 
+      <div class="col-12">
+        <div class="inner">
+          <p># Multiple condition or else if</p>
+
+          <ng-template [ngIf]= "color === 'red'">
+            <h4 style= "color: red">Red Color</h4>
+          </ng-template>
+
+          <ng-template [ngIf]= "color === 'green'">
+            <h4 style= "color: green">Green Color</h4>
+          </ng-template>
+
+          <ng-template [ngIf]= "color === 'blue'">
+            <h4 style= "color: blue">Blue Color</h4>
+          </ng-template>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p># Switch case</p>
+          <div [ngSwitch] = "switchColors">
+            <h4 *ngSwitchCase= "'goldenrod'" style= "color: goldenrod">Goldenrod Color</h4>
+            <h4 *ngSwitchCase= "'purple'" style= "color: purple">Purple Color</h4>
+            <h4 *ngSwitchCase= "'royalblue'" style= "color: royalblue">Royalblue Color</h4>
+            <h4 *ngSwitchCase= "'orangered'" style= "color: orangered">Orangered Color</h4>
+            <h4 *ngSwitchDefault>Unknown Color</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p># For Loop | *ngFor</p>
+
+        </div>
+      </div>
 
     </div>
   </div>

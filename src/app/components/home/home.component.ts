@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
   name = "peter";
   disable = false;
   show = true;
+  color = "blue";
+  switchColors = "abc";
 
   constructor() { }
 
