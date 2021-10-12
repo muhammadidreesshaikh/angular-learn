@@ -139,6 +139,18 @@
         </div>
       </div>
 
+      <div class="col-12">
+        <div class="inner">
+          <p># Style Binding | Dynamic Style</p>
+          <h4 [style.color] = "change" >Change Color</h4>
+          <button class="mt-3" (click) = "updateColor()">Update Color</button>
+          <br>
+          <br>
+          <h4 class="p-2" [style.color] = "frColor" [style.backgroundColor] = "bgColor" >Change Bg-Color</h4>
+          <button class="mt-2" (click) = "bgUpdate()">Update Color</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

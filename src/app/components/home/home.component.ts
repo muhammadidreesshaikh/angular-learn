@@ -9,6 +9,7 @@ import { TimeoutError } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
+  // this is called properties
   displayValue = "";
   resultValue = "";
   count = 0;
@@ -17,6 +18,10 @@ export class HomeComponent implements OnInit {
   show = true;
   color = "blue";
   switchColors = "abc";
+  // style-binding
+  change = "green";
+  frColor = "white";
+  bgColor = "orange";
 
   // Loop
   users=['Anil', 'basker', 'Adom', 'Ancy'];
@@ -74,6 +79,15 @@ export class HomeComponent implements OnInit {
 
   counter(type: string){
     type==='add' ? this.count++ : this.count--;
+  }
+
+  updateColor(){
+    this.change="red"
+  }
+
+  bgUpdate(){
+    this.frColor="green"
+    this.bgColor="red"
   }
 
 }
