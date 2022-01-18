@@ -9,6 +9,15 @@ import { TimeoutError } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
+  // Tutorial 4 - Make first change
+  title = '12';
+
+  // Tutorial 5 - What is Interpolation
+  data = 'Learn';
+  // getValue() : string{
+  //   return "get fuction data"
+  // }
+
   // this is called properties
   displayValue = "";
   resultValue = "";

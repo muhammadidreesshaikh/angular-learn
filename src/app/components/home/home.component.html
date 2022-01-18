@@ -4,6 +4,23 @@
 
       <div class="col-12">
         <div class="inner">
+          <p>Tutorial 4 - Make first change</p>
+          <h1>Hello Angular {{title}}</h1>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
+          <p>Tutorial 5 - What is Interpolation</p>
+          <h1>Angular 12 {{data}}</h1>
+          <h1>2+2</h1> <h1>{{2+2}}</h1>
+          <h1>{{data=="Learn"}}</h1>
+          <!-- <h1>{{getValue()}}</h1> -->
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="inner">
           <p># call fuction on button click</p>
           <button class="mr-3" (click)="getRemind()">Click Remind</button>
           <button (click)="getName('1st Name', '2nd Name')">Click Name</button>
@@ -42,9 +59,9 @@
         <div class="inner">
           <p># make button for counter</p>
 
-          <button (click)="counter('minus')">---</button>
-          <p>Count is : {{count}}</p>
-          <button (click)="counter('add')">+++</button>
+          <button class="mr-3" (click)="counter('minus')">---</button> <button (click)="counter('add')">+++</button>
+          <h4 class="pt-2">Count is : {{count}}</h4>
+          
         </div>
       </div>
 
