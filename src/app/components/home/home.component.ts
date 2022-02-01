@@ -14,19 +14,21 @@ export class HomeComponent implements OnInit {
 
   // Tutorial 5 - What is Interpolation
   data = 'Learn';
-  // getValue() : string{
-  //   return "get fuction data"
-  // }
 
-  // this is called properties
+  //Tutorial 11 - Get Input Box Value and Display
   displayValue = "";
   resultValue = "";
+
+  // Tutorial 12 - make button for counter
   count = 0;
+
+
   name = "peter";
   disable = false;
   show = true;
   color = "blue";
   switchColors = "abc";
+
   // style-binding
   change = "green";
   frColor = "white";
@@ -55,15 +57,18 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  // call fuction on button click
   getRemind(){
     alert("fuction called")
   }
-
   getName(name:string, secondName:string){
     alert(name);
     alert(secondName);
   }
 
+
+  // Events | blur | keyup, | mouseover
   getValue(val: string){
     console.warn(val)
   }
@@ -76,6 +81,8 @@ export class HomeComponent implements OnInit {
     console.warn(val)
   }
 
+
+  // call fuction with different events
   getInput(val: string){
     console.warn(val)
     this.displayValue=val
@@ -86,9 +93,11 @@ export class HomeComponent implements OnInit {
     this.resultValue=val
   }
 
+
+  // Tutorial 12 - make button for counter
   counter(type: string){
     type==='add' ? this.count++ : this.count--;
-  }
+  } 
 
   updateColor(){
     this.change="red"

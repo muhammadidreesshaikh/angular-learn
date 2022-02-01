@@ -21,7 +21,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># call fuction on button click</p>
+          <p>Tutorial 9 - call fuction on button click</p>
           <button class="mr-3" (click)="getRemind()">Click Remind</button>
           <button (click)="getName('1st Name', '2nd Name')">Click Name</button>
         </div>
@@ -29,7 +29,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># call fuction with different events</p>
+          <p>Tutorial 10 - Events | blur | keyup, | mouseover</p>
           <button class="mr-3" (click)="getValue('hello')">Click Value</button>
 
           <input type="text" #dummy (keyup)="getData(dummy.value)" placeholder="event keyup">
@@ -39,28 +39,28 @@
 
           <p class="pt-4"># call fuction with different events h6 tag mouse over & mouse leave</p>
           <h6 (mouseover)="getMouse('over')">Angular Setup</h6>
-          <h6 (mouseleave)="getMouse('leave')">Setup Angular</h6>
+          <h6 class="pt-3" (mouseleave)="getMouse('leave')">Setup Angular</h6>
         </div>
       </div>
 
       <div class="col-12">
         <div class="inner">
-          <p># Get Input Box Value and Display</p>
+          <p>Tutorial 11 - Get Input Box Value and Display</p>
           <input #box type="text" (keyup)="getInput(box.value)" placeholder="Your Name" name="name">
-          <p>Box value is : {{displayValue}}</p>
+          <h6>Box value is : {{displayValue}}</h6>
 
           <input class="mt-2" #reslt type="text" placeholder="Your Name" name="name">
           <button class="ml-2" (click)="getPress(reslt.value)">Click</button>
-          <p>Box Result is : {{resultValue}}</p>
+          <h6>Box Result is : {{resultValue}}</h6>
         </div>
       </div>
 
       <div class="col-12">
         <div class="inner">
-          <p># make button for counter</p>
+          <p>Tutorial 12 - make button for counter</p>
 
-          <button class="mr-3" (click)="counter('minus')">---</button> <button (click)="counter('add')">+++</button>
-          <h4 class="pt-2">Count is : {{count}}</h4>
+          <button class="mr-3" (click)="counter('minus')">- - -</button> <button (click)="counter('add')">+ + +</button>
+          <h6 class="pt-2">Count is : {{count}}</h6>
           
         </div>
       </div>
