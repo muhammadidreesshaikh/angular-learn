@@ -22,19 +22,20 @@ export class HomeComponent implements OnInit {
   // Tutorial 12 - make button for counter
   count = 0;
 
-
+  // Tutorial 14 - Property Binding Example
   name = "peter";
   disable = false;
+
+  // Tutorial 15 - If else condition
   show = true;
-  color = "blue";
-  switchColors = "abc";
 
-  // style-binding
-  change = "green";
-  frColor = "white";
-  bgColor = "orange";
+  // Tutorial 16 - Multiple condition or else if
+  color = "red";
 
-  // Loop
+  // Tutorial 17 - Switch case
+  colors="goldenrod";
+
+  // Tutorial 18 - For Loop | *ngFor 
   users=['Anil', 'basker', 'Adom', 'Ancy'];
   userDetails=[
     {name: 'Anil', email: 'anil@email.com', phone: '0215543302'},
@@ -50,6 +51,11 @@ export class HomeComponent implements OnInit {
     {name: 'Anecy', phone: '23457', socialAccounts:['gmail', 'whastapp', 'yahoo']},
     {name: 'Jommy', phone: '65432', socialAccounts:['youtube', 'whastapp', 'gmail']},
   ]
+
+  // style-binding
+  change = "green";
+  frColor = "white";
+  bgColor = "orange";
 
 
   constructor() { }

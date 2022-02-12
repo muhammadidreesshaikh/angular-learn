@@ -67,7 +67,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># Basic Rule of style</p>
+          <p>Tutorial 13 - Basic Rule of style</p>
           Global Style:
           <h3 class="heading">Check Style</h3>
         </div>
@@ -75,7 +75,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># Property Binding & Interpolation</p>
+          <p>Tutorial 14 - Property Binding & Interpolation</p>
           <!-- Property Interpolation -->
           <input class="mr-3" type="text" name="user-name" value={{name}} disabled={{disable}}>
 
@@ -86,25 +86,22 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># If else condition</p>
-          <h4 *ngIf="show else elseBlock">If Condition</h4>
+          <p>Tutorial 15 - If else condition</p>
+          <h4 *ngIf="show; then ifBlock else elseBlock">If Condition</h4>
 
-          <!-- check other style condition if-else -->
-          <!-- <h4 *ngIf= "show; then ifBlock else elseBlock">If Condition</h4> -->
+          <ng-template #ifBlock>
+            <h4>If Condition</h4>
+          </ng-template>
 
           <ng-template #elseBlock>
             <h4>Else Condition</h4>
           </ng-template>
-
-          <!-- <ng-template #ifBlock>
-            <h4>Condition</h4>
-          </ng-template> -->
         </div>
       </div>
 
       <div class="col-12">
         <div class="inner">
-          <p># Multiple condition or else if</p>
+          <p>Tutorial 16 - Multiple condition or else if</p>
 
           <ng-template [ngIf]="color === 'red'">
             <h4 style="color: red">Red Color</h4>
@@ -122,8 +119,8 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># Switch case</p>
-          <div [ngSwitch]="switchColors">
+          <p>Tutorial 17 - Switch case</p>
+          <div [ngSwitch]="colors">
             <h4 *ngSwitchCase="'goldenrod'" style="color: goldenrod">Goldenrod Color</h4>
             <h4 *ngSwitchCase="'purple'" style="color: purple">Purple Color</h4>
             <h4 *ngSwitchCase="'royalblue'" style="color: royalblue">Royalblue Color</h4>
@@ -135,7 +132,7 @@
 
       <div class="col-12">
         <div class="inner">
-          <p># For Loop | *ngFor</p>
+          <p>Tutorial 18 - For Loop | *ngFor </p>
           <h4 *ngFor="let item of users"> {{item}} </h4>
           <br>
           <h4 *ngFor="let item of userDetails">{{item.name}} -- {{item.email}} -- {{item.phone}}</h4>
