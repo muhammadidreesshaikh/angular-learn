@@ -58,6 +58,9 @@ export class HomeComponent implements OnInit {
   bgColor = "orange";
 
 
+  // Tutorial 22 - Toggle Element | hide and show tag
+  display = true;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -112,6 +115,11 @@ export class HomeComponent implements OnInit {
   bgUpdate(){
     this.frColor="green"
     this.bgColor="red"
+  }
+
+  // Tutorial 22 - Toggle Element | hide and show tag
+  toggle(){
+    this.display=!this.display;
   }
 
 }
